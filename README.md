@@ -1,97 +1,83 @@
-# Bash Script Guide
+# Bash Script Tutorial Guide
 
-## Basic Script Structure
+## Beginner Level
 
-```bash
-#!/usr/bin/env bash
-# Description: Your script description
-```
+### 1. Basic Bash Script
 
-## Key Concepts
+- Creating Scripts & Execute Permissions
+- Shebang (#!) Usage
+- Variables & Data Types
+- Command Substitution
+- Input/Output Operations
 
-### 1. Variables
+### 2. Control Flow
 
-```bash
-name="John"
-echo "Hello, $name"
-```
+- If/Else Conditions
+- For & While Loops
+- Case Statements
+- Functions
 
-### 2. Input/Output
+### 3. Arrays
 
-```bash
-read -p "Enter name: " name
-echo "Output text"
-```
+- Declaring Arrays
+- Accessing Array Elements
+- Array Operations
+- Array Iteration
 
-### 3. Control Flow
+## Intermediate Level
 
-```bash
-# If statements
-if [ condition ]; then
-    echo "True"
-fi
+### 1. File Operations
 
-# Loops
-for i in {1..5}; do
-    echo $i
-done
+- File & Directory Management
+- File Permissions
+- Redirection & Pipes
 
-while [ condition ]; do
-    echo "Loop"
-done
-```
+### 2. String Manipulation
 
-### 4. Functions
+- Regular Expressions
+- Sed & Awk Basics
 
-```bash
-function_name() {
-    local param=$1
-    echo "Parameter: $param"
-}
-```
+### 3. Process Management
 
-### 5. Arrays
+- Background Processes
+- Job Control
+- Process Monitoring
 
-```bash
-fruits=("apple" "banana" "orange")
-echo ${fruits[0]}
-echo ${fruits[@]}
-```
+## Advanced Level (DevOps Focus)
 
-## Common Operations
+### 1. Shell Script Best Practices
 
-### File Operations
+- Error Handling
+- Logging
+- Debugging Techniques
 
-```bash
-touch file.txt
-mkdir directory
-rm file.txt
-cp source dest
-mv old new
-```
+### 2. Automation Scripts
 
-### Permissions
+- Deployment Automation
+- Monitoring Scripts
+- Backup Scripts
 
-```bash
-chmod +x script.sh  # Make executable
-chmod 755 file      # Set specific permissions
-```
+### 3. System Administration
 
-### Running Scripts
+- Service Management
+- Network Operations
+- Security Practices
 
-1. Make executable: `chmod +x script.sh`
-2. Run: `./script.sh` or `bash script.sh`
+### 4. Integration
 
-## Best Practices
+- API Integration
+- Docker Integration
+- CI/CD Pipeline Integration
 
-1. Always include shebang line
-2. Use meaningful variable names
-3. Comment your code
-4. Handle errors appropriately
-5. Test for edge cases
+## Prerequisites
 
-## Debugging
+- Basic command line knowledge
+- Text editor (nano, vim)
+- Linux/Unix environment
 
-- Add `set -x` for debug mode
-- Use `echo` for debugging
-- Check exit codes with `$?`
+## Getting Started
+
+1. Install required tools
+2. Complete exercises in each section
+3. Practice with real-world scenarios
+4. Build your own automation scripts
